@@ -21,7 +21,7 @@ for markdown_post in os.listdir('content'):
         index_posts_metadata = [POSTS[post].metadata for post in POSTS]
         index_html_content = index_template.render(posts=index_posts_metadata)
 
-    with open('output/index.html', 'w') as file:
+    with open('index.html', 'w') as file:
         file.write(index_html_content)
 for post in POSTS:
     post_metadata = POSTS[post].metadata
